@@ -20,7 +20,6 @@ class ArgumentParser
                 if (!is_numeric($val)) {
                     throw new InvalidArgumentException("Non-numeric value found: $val");
                 }
-                // Check if the number is a float
                 if (floor((float)$val) != (float)$val) {
                     throw new InvalidArgumentException("Dice faces must be integers, found: $val");
                 }
